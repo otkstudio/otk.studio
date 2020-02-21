@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `OTK Studio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `OTK Studio is the design and technology practice of Oliver Thomas Klein. We create digital products, identities and experiences that reflect the core values of those we collaborate with. Everything we do is rooted in an understanding, and a consideration, of visual sensibility, modern technology and functional design.`,
+    author: `OTK Studio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `OTK Studio`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,

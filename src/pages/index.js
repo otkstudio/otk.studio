@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect, useCallback, useRef } from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -19,6 +19,7 @@ const IndexPage = ({
   const [projectBreakPoints, setProjectBreakPoints] = useState(null);
   const [photoCount, setPhotoCount] = useState(null);
   const [viewportWidth, setViewportWidth] = useState(null);
+  const topOfProject = useRef(null);
 
   // Handle Screen Resize
   useEffect(() => {
@@ -59,18 +60,19 @@ const IndexPage = ({
           return null;
         }
       })
+
       const newArr = arr.filter(val => val !== null)
       if (newArr[0] > -1) {
         setProjectIsOpen(newArr[0]);
       } else {
         setProjectIsOpen(null);
       }
-      const carou = document.getElementById(`carousel`);
-      if (carou) {
-        carou.scrollIntoView(true);
+
+      if (topOfProject && currentSlide !== 0) {
+        topOfProject.current.scrollIntoView({behavior: "smooth"});
       }
     }
-  }, [currentSlide, projectBreakPoints, setProjectIsOpen])
+  }, [currentSlide, projectBreakPoints, setProjectIsOpen, projectIsOpen, topOfProject])
 
   // Measure Bio
   const measuredBio = useCallback(node => {
@@ -79,26 +81,20 @@ const IndexPage = ({
     }
   }, [viewportWidth]);
 
-  // Set Bounds on Slide Position
-  useEffect(() => {
-    if (currentSlide < 0) setCurrentSlide(0);
-    if(currentSlide > photoCount) setCurrentSlide(photoCount);
-  }, [currentSlide, photoCount])
-
   return (
     <Layout>
-      <SEO title="" />
+      <SEO title="Design & Technology Studio by Oliver Thomas Klein" />
       <Grid>
         <Navigation projectIsOpen={projectIsOpen}>
-          <div>Est. 2019</div>
-          <div>
+          <NavItem>Est. 2019</NavItem>
+          <NavItem>
             <Link href="mailto:oliver@otk.studio">Contact</Link>,
             <Link href="https://www.instagram.com/oliverthomasklein" target="_blank">Instagram</Link>
-          </div>
-          <div>Art, Design & Technology</div>
+          </NavItem>
+          <NavItem>Art, Design & Technology</NavItem>
         </Navigation>
 
-        <Title onClick={() => setCurrentSlide(0)} projectIsOpen={projectIsOpen} viewBox="0 0 1418.634 201.272"><path d="M103.972,224.336c58.936,0,92.018-41.144,92.018-100.636,0-58.658-33.082-100.636-92.018-100.636-59.77,0-92.3,41.7-92.3,100.636C11.676,188.474,45.036,224.336,103.972,224.336Zm0-21.684c-21.962,0-39.2-7.784-50.04-21.684-7.506-9.73-13.9-30.3-13.9-57.268,0-25.02,5.282-45.592,14.734-58.1,8.34-10.842,25.02-20.85,50.318-20.85,21.962,0,37.53,7.506,47.538,21.962,9.73,13.9,15.012,31.692,15.012,56.99,0,25.02-5.282,43.368-15.012,57.268C142.614,195.424,127.046,202.652,103.972,202.652ZM250.2,221h25.3V48.362h64.774V26.4H185.426V48.362H250.2Zm224.9,0h31.414L424.228,107.02,504.57,26.4H470.932l-92.574,93.686V26.4h-25.3V221h25.3V153.446l27.8-28.078Zm139.278,3.336c37.53,0,78.4-12.788,78.4-60.048,0-41.422-33.082-48.372-71.724-54.488-26.41-4.17-55.878-11.12-55.878-33.082,0-22.8,23.63-32.8,42.534-32.8,31.97,0,51.43,16.68,51.986,45.87l26.132-4.726c-4.17-46.148-37.252-61.994-77.562-61.994-31.692,0-68.944,15.012-68.944,54.766,0,37.252,33.36,47.816,63.662,55.044,29.19,6.95,63.662,6.394,63.662,33.36,0,28.356-24.464,36.974-53.1,36.974-30.024,0-52.82-17.236-52.82-48.372l-26.688,2.78C534.038,202.93,571.568,224.336,614.38,224.336ZM752.546,221h25.3V48.362h64.774V26.4H687.772V48.362h64.774Zm179.588,3.336c49.484,0,76.172-23.908,76.172-67.554V26.4h-25.3V156.782c0,30.858-23.908,45.314-50.874,45.314s-50.6-14.456-50.6-45.314V26.4h-25.3V156.782C856.24,200.428,882.65,224.336,932.134,224.336ZM1028.878,221h66.164c57.824,0,92.3-36.418,92.3-97.3,0-58.38-33.36-97.3-92.3-97.3h-66.164Zm25.02-21.684V48.084h38.364c24.186,0,43.368,7.228,52.82,20.85,9.73,13.9,13.9,29.19,13.9,54.766,0,25.3-4.17,41.144-13.9,55.044-8.9,13.066-27.522,20.572-52.82,20.572ZM1204.018,221h25.3V26.4h-25.3Zm134.274,3.336c58.936,0,92.018-41.144,92.018-100.636,0-58.658-33.082-100.636-92.018-100.636-59.77,0-92.3,41.7-92.3,100.636C1246,188.474,1279.356,224.336,1338.292,224.336Zm0-21.684c-21.962,0-39.2-7.784-50.04-21.684-7.506-9.73-13.9-30.3-13.9-57.268,0-25.02,5.282-45.592,14.734-58.1,8.34-10.842,25.02-20.85,50.318-20.85,21.962,0,37.53,7.506,47.538,21.962,9.73,13.9,15.012,31.692,15.012,56.99,0,25.02-5.282,43.368-15.012,57.268C1376.934,195.424,1361.366,202.652,1338.292,202.652Z" transform="translate(-11.676 -23.064)"/></Title>
+        <Title ref={topOfProject} onClick={() => setCurrentSlide(0)} projectIsOpen={projectIsOpen} viewBox="0 0 1418.634 201.272"><path d="M103.972,224.336c58.936,0,92.018-41.144,92.018-100.636,0-58.658-33.082-100.636-92.018-100.636-59.77,0-92.3,41.7-92.3,100.636C11.676,188.474,45.036,224.336,103.972,224.336Zm0-21.684c-21.962,0-39.2-7.784-50.04-21.684-7.506-9.73-13.9-30.3-13.9-57.268,0-25.02,5.282-45.592,14.734-58.1,8.34-10.842,25.02-20.85,50.318-20.85,21.962,0,37.53,7.506,47.538,21.962,9.73,13.9,15.012,31.692,15.012,56.99,0,25.02-5.282,43.368-15.012,57.268C142.614,195.424,127.046,202.652,103.972,202.652ZM250.2,221h25.3V48.362h64.774V26.4H185.426V48.362H250.2Zm224.9,0h31.414L424.228,107.02,504.57,26.4H470.932l-92.574,93.686V26.4h-25.3V221h25.3V153.446l27.8-28.078Zm139.278,3.336c37.53,0,78.4-12.788,78.4-60.048,0-41.422-33.082-48.372-71.724-54.488-26.41-4.17-55.878-11.12-55.878-33.082,0-22.8,23.63-32.8,42.534-32.8,31.97,0,51.43,16.68,51.986,45.87l26.132-4.726c-4.17-46.148-37.252-61.994-77.562-61.994-31.692,0-68.944,15.012-68.944,54.766,0,37.252,33.36,47.816,63.662,55.044,29.19,6.95,63.662,6.394,63.662,33.36,0,28.356-24.464,36.974-53.1,36.974-30.024,0-52.82-17.236-52.82-48.372l-26.688,2.78C534.038,202.93,571.568,224.336,614.38,224.336ZM752.546,221h25.3V48.362h64.774V26.4H687.772V48.362h64.774Zm179.588,3.336c49.484,0,76.172-23.908,76.172-67.554V26.4h-25.3V156.782c0,30.858-23.908,45.314-50.874,45.314s-50.6-14.456-50.6-45.314V26.4h-25.3V156.782C856.24,200.428,882.65,224.336,932.134,224.336ZM1028.878,221h66.164c57.824,0,92.3-36.418,92.3-97.3,0-58.38-33.36-97.3-92.3-97.3h-66.164Zm25.02-21.684V48.084h38.364c24.186,0,43.368,7.228,52.82,20.85,9.73,13.9,13.9,29.19,13.9,54.766,0,25.3-4.17,41.144-13.9,55.044-8.9,13.066-27.522,20.572-52.82,20.572ZM1204.018,221h25.3V26.4h-25.3Zm134.274,3.336c58.936,0,92.018-41.144,92.018-100.636,0-58.658-33.082-100.636-92.018-100.636-59.77,0-92.3,41.7-92.3,100.636C1246,188.474,1279.356,224.336,1338.292,224.336Zm0-21.684c-21.962,0-39.2-7.784-50.04-21.684-7.506-9.73-13.9-30.3-13.9-57.268,0-25.02,5.282-45.592,14.734-58.1,8.34-10.842,25.02-20.85,50.318-20.85,21.962,0,37.53,7.506,47.538,21.962,9.73,13.9,15.012,31.692,15.012,56.99,0,25.02-5.282,43.368-15.012,57.268C1376.934,195.424,1361.366,202.652,1338.292,202.652Z" transform="translate(-11.676 -23.064)"/></Title>
 
         <Images id="images">
           {images &&
@@ -107,6 +103,7 @@ const IndexPage = ({
               currentSlide={currentSlide}
               setCurrentSlide={setCurrentSlide}
               images={images}
+              photoCount={photoCount}
             />
           }
         </Images>
@@ -118,7 +115,7 @@ const IndexPage = ({
           projectLength={edges.filter(edge => !!edge.node.frontmatter.date).length}
         >
           <Bio ref={measuredBio} id="bio" projectIsOpen={projectIsOpen} bioHeight={bioHeight}>
-            &#8195;&#8195;OTK Studio is the design and technology practice of Oliver Thomas Klein. We create digital products, identities and experiences that reflect the core values of those we collaborate with.
+            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is the design and technology practice of Oliver Thomas Klein. We create digital products, identities and experiences that reflect the core values of those we collaborate with.
 
             <br/>&#8195;&#8195;Everything we do is rooted in an understanding, and a consideration, of visual sensibility, modern technology and functional design.
           </Bio>
@@ -178,12 +175,13 @@ const Grid = styled.div`
     height: auto;
     padding: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 200px 1fr;
+    grid-template-rows: min-content 200px auto 100px;
     grid-row-gap: 10px;
     grid-template-areas: 
       "t"
       "i"
       "c"
+      "n"
   }
 `;
 
@@ -203,15 +201,51 @@ const Navigation = styled.div`
   opacity: ${props => props.projectIsOpen !== null ? 0 : 1};
 
   @media (max-width: 800px) {
-    display: none;
+    h2:first-child {
+      display: none;
+    }
+
+    grid-template-columns: 1fr;
+    height: 26px;
+    max-height: 26px;
+    opacity: 1;
+
+    h2:nth-child(2) {
+      font-size: 20px;
+      line-height: 28px;
+      a:first-child {
+        padding-left: 0;
+      }
+    }
+  
+    h2:last-child {
+      display: none;
+    }
   }
 
-  div:first-child {
+  h2:first-child {
     text-align: left;
   }
 
-  div:last-child {
+  h2:last-child {
     text-align: right;
+  }
+`;
+
+// For SEO Purposes
+const NavItem = styled.h2`
+  font-size: inherit;
+  display: inline;
+  margin: inherit;
+  padding: inherit;
+`;
+
+const Link = styled.a`
+  color: black;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
@@ -224,7 +258,7 @@ const Title = styled.svg`
   padding: ${props => props.projectIsOpen !== null ? 0 : 10}px 0 10px;
   transition: 0.7s cubic-bezier(0.24, 1, 0.32, 1);
   @media (max-width: 800px) {
-    padding: 10px;
+    padding: 8px 10px 4px;
     padding-bottom: 5px;
     width: calc(100vw);
   }
@@ -255,10 +289,21 @@ const Bio = styled.div`
   width: calc(50vw - 20px);
 
   @media(max-width: 800px) {
+    font-size: 24px;
+    line-height: 28px;
     position: static;
     padding: 10px 10px 0;
-    width: calc(100vw - 20px);
+    width: calc(100vw);
   }
+`;
+
+// For SEO Purposes
+const SeoH1 = styled.h1`
+  font-size: inherit;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
 `;
 
 const WorkContainer = styled.div`
@@ -303,15 +348,6 @@ const Images = styled.div`
 
   @media (max-width: 500px) {
     height: 380px;
-  }
-`;
-
-const Link = styled.a`
-  color: black;
-  text-decoration: none;
-  padding: 0 0 0 10px;
-  &:hover {
-    text-decoration: underline;
   }
 `;
 

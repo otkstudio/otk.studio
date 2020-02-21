@@ -3,7 +3,7 @@ import Carousel from 'nuka-carousel';
 import styled from 'styled-components';
 import Arrows from './Arrows';
 
-function Imagery({ images, setCurrentSlide, currentSlide }) {
+function Imagery({ images, setCurrentSlide, currentSlide, photoCount }) {
   return (
     <Container>
       <Carousel
@@ -22,7 +22,26 @@ function Imagery({ images, setCurrentSlide, currentSlide }) {
           images.map((image, index) => <Image key={index} {...image} />)
         }
       </Carousel>
-      <Arrows next={() => setCurrentSlide(current => current + 1)} previous={() => setCurrentSlide(current => current - 1)} />
+      <Arrows 
+        next={() => {
+          setCurrentSlide(current => {
+            if (current === photoCount) {
+              return 1;
+            } else {
+              return current + 1;
+            }
+          })
+        }} 
+        previous={() => {
+          setCurrentSlide(current => {
+            if (current === 0) {
+              return photoCount;
+            } else {
+              return current - 1;
+            }
+          })
+        }} 
+      />
     </Container>
   );
 }

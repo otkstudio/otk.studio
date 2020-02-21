@@ -19,4 +19,4 @@ url: "https://apps.apple.com/us/app/sphere-guidance/id1455792448?ls=1"
 
 ### Sphere was created to democratise coaching and connect individuals with the right people to unlock their potential. Sphere's principal app provides an end-to-end experience that situates coaching in one location. From conversing with potential coaches to scheduling and experiencing powerful sessions, the app facilitates the coaching experience from beginning to beyond.
 
-This product was built internally alongside the incredible team at Sphere, from 2018 to Present. Oliver's role includes product design, strategy and art direction.
+This product was built internally alongside the incredible [team](https://www.sphereishere.com/about-us) at Sphere, from 2018 to Present. Oliver's role includes product design, strategy and art direction.
