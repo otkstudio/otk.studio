@@ -27,7 +27,7 @@ const IndexPage = ({
     window.addEventListener('resize', (e) => {
       setViewportWidth(e.target.innerWidth);
     });
-    setRendered(true);
+    setTimeout(() => setRendered(true), 600);
   }, [])
 
   // Prepare Images and their MetaData
@@ -202,7 +202,7 @@ const Navigation = styled.div`
   text-align: center;
   overflow: hidden;
   max-height: ${props => props.projectIsOpen !== null ? 0 : 28}px;
-  opacity: ${props => props.projectIsOpen !== null ? 0 : 1};
+  opacity: ${props => props.projectIsOpen !== null || !props.rendered ? 0 : 1};
 
   @media (max-width: 800px) {
     h2:first-child {
@@ -212,7 +212,8 @@ const Navigation = styled.div`
     grid-template-columns: 1fr;
     height: 26px;
     max-height: 26px;
-    opacity: 1;
+    opacity: ${props => !props.rendered ? 0 : 1};
+    transition: 1s cubic-bezier(0.24, 1, 0.32, 1);
 
     h2:nth-child(2) {
       font-size: 20px;
@@ -254,16 +255,17 @@ const Link = styled.a`
 `;
 
 const Title = styled.svg`
-  opacity: ${({rendered}) => rendered ? 1 : 0};
-  transform: skewY(${({rendered}) => rendered ? 0 : 0.6}deg);
+  opacity: ${({rendered}) => rendered ? 1 : 1};
+  transform: translateY(${({rendered}) => rendered ? 0 : -38}px);
   grid-area: t;
   margin: 0;
   z-index: 4;
   background: transparent;
   width: calc(${props => props.projectIsOpen !== null ? 50 : 100}vw - ${props => props.projectIsOpen !== null ? 15 : 20}px);
   padding: ${props => props.projectIsOpen !== null ? 0 : 10}px 0 10px;
-  transition: width 0.7s cubic-bezier(0.24, 1, 0.32, 1), padding 0.7s cubic-bezier(0.24, 1, 0.32, 1), opacity 3s cubic-bezier(0.24, 1, 0.32, 1), transform 4s cubic-bezier(0.24, 1, 0.32, 1);
+  transition: width 0.7s cubic-bezier(0.24, 1, 0.32, 1), padding 0.7s cubic-bezier(0.24, 1, 0.32, 1), transform 1.6s cubic-bezier(0.24, 1, 0.32, 1);
   @media (max-width: 800px) {
+    transform: translateY(${({rendered}) => rendered ? 0 : -24}px);
     padding: 8px 10px 4px;
     padding-bottom: 5px;
     width: calc(100vw);
@@ -272,7 +274,7 @@ const Title = styled.svg`
 `;
 
 const Content = styled.div`
-  transition: opacity 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.6s;
+  transition: opacity 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.3s;
   opacity: ${({rendered}) => rendered ? 1 : 0};
   grid-area: c;
   z-index: 4;
@@ -327,7 +329,7 @@ const WorkContainer = styled.div`
 `;
 
 const Images = styled.div`
-  transition: 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.6s;
+  transition: 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.3s;
   opacity: ${({rendered}) => rendered ? 1 : 0};
   overflow: scroll;
   grid-column-start: 3 !important;
