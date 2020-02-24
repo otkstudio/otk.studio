@@ -10,7 +10,6 @@ images: [
   { url: 'seeker-stories-2.jpg', cover: true },
   { url: 'seeker-stories-3.jpg', cover: true },
   { url: 'seeker-stories-4.jpg', cover: true },
-  { url: 'seeker-stories-5.jpg', cover: true }
 ]
 date: "2019-05-01"
 ---
