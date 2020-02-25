@@ -204,6 +204,12 @@ const Content = styled.div`
     letter-spacing: -0.025em;
     margin: 15px 0;
   }
+  a {
+    color: black;
+    &:visited {
+      color: black;
+    }
+  }
 `;
 
 const MetaData = styled.div`
