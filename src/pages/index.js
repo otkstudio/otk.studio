@@ -118,8 +118,8 @@ const IndexPage = ({
           projectLength={edges.filter(edge => !!edge.node.frontmatter.date).length}
         >
           <Bio ref={measuredBio} id="bio" projectIsOpen={projectIsOpen} bioHeight={bioHeight}>
-            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is the design and technology practice of Oliver Thomas Klein. I create digital products, identities and experiences that reflect the core values of those I collaborate with.
-            <br/>&#8195;&#8195;Everything I do is rooted in an understanding, and a consideration, of visual sensibility, modern technology and functional design.
+            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is the design & technology practice of Oliver Thomas Klein.
+            <br/>&#8195;&#8195;Through the combination of visual sensibility, modern technology and functional design; Oliver creates digital products, identities and experiences that reflect the core values of those he collaborates with.
           </Bio>
           <WorkContainer id="work" bioHeight={bioHeight} projectIsOpen={projectIsOpen}>
             {edges
