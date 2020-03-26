@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `OTK Studio`,
-    description: `OTK Studio is the design and technology practice of Oliver Thomas Klein. We create digital products, identities and experiences that reflect the core values of those we collaborate with. Everything we do is rooted in an understanding, and a consideration, of visual sensibility, modern technology and functional design.`,
+    description: `OTK Studio is the design & technology practice of Oliver Thomas Klein. Through an understanding of visual sensibility, modern technology and functional design, Oliver creates digital products, identities and experiences that reflect the core values of those he collaborates with.`,
     author: `OTK Studio`,
   },
   plugins: [
