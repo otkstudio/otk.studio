@@ -2,9 +2,9 @@
 path: "/work/get-coaching"
 title: "Get Coaching"
 deliverable: "Mobile App"
-new: false
+new: true
 partner: "Sphere"
-practice: [ "Art Direction", "Strategy", "Design" ]
+practice: [ "Art Direction", "Strategy", "Design", "Development" ]
 ongoing: true
 images: [
   { url: 'get-coaching-1.jpg', cover: false, height: '70%' },
