@@ -248,6 +248,7 @@ const PracticeContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   @media (max-width: 500px) {
+    // display: none;
   }
 `;
 

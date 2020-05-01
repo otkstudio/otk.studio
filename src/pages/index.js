@@ -378,7 +378,9 @@ const Legend = styled.div`
 
   @media(max-width: 800px) {
     width: 100%;
-    display: none;
+    // display: none;
+    padding: 0 10px;
+    font-size: 10px;
   }
 `;
 
@@ -401,6 +403,10 @@ const LegendColor = styled.div`
     if ( name === 'Photography') { color = '#05e900' }
     return color;
   }};
+  @media(max-width: 800px) {
+    width: 8px;
+    height: 8px;
+  }
 `;
 
 const LegendName = styled.div`
@@ -409,6 +415,11 @@ const LegendName = styled.div`
   letter-spacing: -0.025em;
   color: black;
   margin-left: 2px;
+  @media(max-width: 800px) {
+    font-size: 11px;
+    letter-spacing: -0.05em;
+    padding-bottom: 1px;
+  }
 `;
 
 export default IndexPage;
