@@ -322,8 +322,12 @@ const WorkContainer = styled.div`
   border-bottom: 1px solid black;
   margin-bottom: 32px;
   @media(max-width: 800px) {
+    margin-bottom: 0;
     padding-top: 10px;
     top: ${({projectIsOpen, bioHeight}) => projectIsOpen !== null ? -bioHeight : 0}px;
+  }
+  @media(max-width: 500px) {
+    margin-bottom: 32px;
   }
 `;
 
@@ -378,9 +382,15 @@ const Legend = styled.div`
 
   @media(max-width: 800px) {
     width: 100%;
-    // display: none;
-    padding: 0 10px;
-    font-size: 10px;
+    padding: 0 10px 0px;
+    position: relative;
+  }
+
+  @media(max-width: 500px) {
+    width: 100%;
+    padding: 0 10px 0px;
+    position: relative;
+    top: -32px;
   }
 `;
 
@@ -403,7 +413,7 @@ const LegendColor = styled.div`
     if ( name === 'Photography') { color = '#05e900' }
     return color;
   }};
-  @media(max-width: 800px) {
+  @media(max-width: 500px) {
     width: 8px;
     height: 8px;
   }
