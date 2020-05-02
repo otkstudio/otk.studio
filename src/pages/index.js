@@ -327,7 +327,7 @@ const WorkContainer = styled.div`
     top: ${({projectIsOpen, bioHeight}) => projectIsOpen !== null ? -bioHeight : 0}px;
   }
   @media(max-width: 500px) {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -390,7 +390,7 @@ const Legend = styled.div`
     width: 100%;
     padding: 0 10px 0px;
     position: relative;
-    top: -32px;
+    top: -15px;
   }
 `;
 
@@ -426,7 +426,7 @@ const LegendName = styled.div`
   color: black;
   margin-left: 2px;
   @media(max-width: 800px) {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: -0.05em;
     padding-bottom: 1px;
   }
