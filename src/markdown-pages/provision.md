@@ -15,4 +15,4 @@ images: [
 date: "2018-09-15"
 ---
 
-### OTK Studio was commissioned by Provision to develop their brand identity in its entirety. Although Provision as a company never came to fruition, it aimed to be a lifestyle brand and content platform for people who saw the world of extreme sports as an interconnected whole. Through a powerful, contemporary wordmark, a cohesive colour palette, sourcing and producing photographs and providing complete brand guidelines, OTK Studio created the foundation to Provision's visual identity.
+### OTK Studio was commissioned by Provision to develop their brand identity in its entirety. Provision is a lifestyle brand and content platform for people who see the world of extreme sports as an interconnected whole. Through a powerful, contemporary wordmark, a cohesive colour palette, sourcing and producing photographs and providing complete brand guidelines, OTK Studio created the foundation to Provision's visual identity.
