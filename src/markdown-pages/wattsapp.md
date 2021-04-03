@@ -2,7 +2,7 @@
 path: "/work/wattsapp"
 title: "WattsApp"
 deliverable: "Mobile App"
-new: true
+new: false
 partner: "Reggie Watts"
 practice: [ "Art Direction", "Strategy", "Design", "Development" ]
 ongoing: true

@@ -2,10 +2,10 @@
 path: "/work/find-a-coach"
 title: "Find a Coach"
 deliverable: "Website"
-new: true
+new: false
 partner: "Sphere"
 practice: [ "Art Direction", "Strategy", "Design", "Development", "Photography" ]
-ongoing: true
+ongoing: false
 images: [
   { url: 'find-a-coach-1.jpg', width: "90%", color: "#333" },
   { url: 'find-a-coach-2.jpg', width: "90%", color: "#333" },
@@ -14,7 +14,6 @@ images: [
   { url: 'find-a-coach-6.jpg', width: "90%", color: "#333" },
 ]
 date: "2020-02-24"
-url: "https://sphereishere.com"
 ---
 
 ### At Sphere we know that finding a coach is the primary boundary between intrigue and action. So, we created a digital platform that works in harmony alongside the Sphere app, empowering users to find their best-fit coaches whilst simultaneously leveraging best practices to deepen our search engine optimisation and conversion funnel.

@@ -2,10 +2,10 @@
 path: "/work/get-coaching"
 title: "Get Coaching"
 deliverable: "Mobile App"
-new: true
+new: false
 partner: "Sphere"
 practice: [ "Art Direction", "Strategy", "Design", "Development" ]
-ongoing: true
+ongoing: false
 images: [
   { url: 'get-coaching-1.jpg', cover: false, height: '70%' },
   { url: 'get-coaching-2.jpg', cover: false, height: '70%' },
@@ -14,7 +14,6 @@ images: [
   { url: 'get-coaching-5.jpg', cover: false, height: '70%', color: "#333" }
 ]
 date: "2020-02-25"
-url: "https://apps.apple.com/us/app/sphere-guidance/id1455792448?ls=1"
 ---
 
 ### Sphere was created to democratise coaching and connect individuals with the right people to unlock their potential. Sphere's principal app provides an end-to-end experience that situates coaching in one location. From conversing with potential coaches to scheduling and experiencing powerful sessions, the app facilitates the coaching experience from beginning to beyond.
