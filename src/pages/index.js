@@ -200,6 +200,7 @@ const Navigation = styled.div`
   height: 28px;
   text-align: center;
   overflow: hidden;
+  max-width: calc(100vw - 20px);
   max-height: ${props => props.projectIsOpen !== null ? 0 : 28}px;
   opacity: ${props => props.projectIsOpen !== null || !props.rendered ? 0 : 1};
 
