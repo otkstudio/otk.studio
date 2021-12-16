@@ -155,7 +155,7 @@ const IndexPage = ({
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: min-content min-content 1fr;
   overflow: hidden;
   grid-column-gap: 10px;
