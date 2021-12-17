@@ -344,7 +344,7 @@ const Images = styled.div`
   background-position: center center;
   position: relative;
   left: 0;
-  right: -10px;
+  right: 0;
   top: -10px;
   bottom: -10px;
   width: calc(100% + 10px);
@@ -456,7 +456,6 @@ export const pageQuery = graphql`
               cover
               height
               width
-              color
             }
             new
           }

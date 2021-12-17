@@ -8,12 +8,8 @@ practice: [ "Art Direction", "Strategy", "Design", "Development" ]
 ongoing: true
 images: [
   { url: 'wattsapp-1.jpg', cover: true },
-  { url: 'wattsapp-2.jpg', cover: false, height: '70%', color: '#000' },
-  { url: 'wattsapp-3.jpg', cover: false, height: '70%', color: '#333' },
-  { url: 'wattsapp-4.jpg', cover: false, height: '70%', color: '#333' },
-  { url: 'wattsapp-5.jpg', cover: false, height: '70%', color: '#333' }
 ]
-date: "2020-03-01"
+date: "2021-11-03"
 url: "https://apps.apple.com/us/app/wattsapp-by-reggie-watts/id1489429381?ls=1"
 ---
 

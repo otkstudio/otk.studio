@@ -7,7 +7,6 @@ partner: "Ryan Willms"
 practice: [ "Design", "Development" ]
 images: [ 
   { url: 'compendium-1.jpg', cover: false, width: '85%' },
-  { url: 'compendium-2.jpg', cover: false, width: '85%' }
 ]
 date: "2019-02-12"
 url: "https://compendiumstudio.com"

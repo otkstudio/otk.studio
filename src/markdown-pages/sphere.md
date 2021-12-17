@@ -1,17 +1,13 @@
 ---
-path: "/work/get-coaching"
-title: "Get Coaching"
+path: "/work/sphere"
+title: "Sphere"
 deliverable: "Mobile App"
 new: false
 partner: "Sphere"
 practice: [ "Art Direction", "Strategy", "Design", "Development" ]
 ongoing: false
 images: [
-  { url: 'get-coaching-1.jpg', cover: false, height: '70%' },
   { url: 'get-coaching-2.jpg', cover: false, height: '70%' },
-  { url: 'get-coaching-3.jpg', cover: false, height: '70%' },
-  { url: 'get-coaching-4.jpg', cover: false, height: '70%' },
-  { url: 'get-coaching-5.jpg', cover: false, height: '70%', color: "#333" }
 ]
 date: "2020-02-25"
 ---

@@ -6,11 +6,7 @@ new: false
 partner: "Provision"
 practice: [ "Art Direction", "Design", "Photography" ]
 images: [
-  { url: 'provision-1.jpg', cover: false, height: '80%' },
   { url: 'provision-2.jpg', cover: false, height: '80%' },
-  { url: 'provision-3.jpg', cover: false, height: '80%' },
-  { url: 'provision-4.jpg', cover: false, height: '80%' },
-  { url: 'provision-5.jpg', cover: false, height: '80%' }
 ]
 date: "2018-09-15"
 ---
