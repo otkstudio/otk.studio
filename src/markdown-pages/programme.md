@@ -13,4 +13,4 @@ date: "2021-11-13"
 url: "https://programme.app/download"
 ---
 
-### Programme takes an algorithmic approach to generating effective workout plans designed uniquely for people of all abilities, available equipment, time and preference. In co-founding Programme, Oliver focuses on creative direction, user experience, algorithm design, software engineering, and growth.
+### Programme takes an algorithmic approach to generating effective workout plans designed uniquely for people of all abilities, available equipment, time and preference. As a founding partner, OTK Studio delivers on creative direction, product design and software engineering.

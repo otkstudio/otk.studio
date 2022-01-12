@@ -85,13 +85,12 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <SEO title="Design & Technology Studio by Oliver Thomas Klein" />
+      <SEO title="Design & Technology Studio" />
       <Grid>
         <Navigation rendered={rendered} projectIsOpen={projectIsOpen}>
           <NavItem>Est. 2019</NavItem>
           <NavItem>
             <Link href="mailto:oliver@otk.studio">Contact</Link>,
-            <Link href="https://www.instagram.com/oliverthomasklein" target="_blank">Instagram</Link>
           </NavItem>
           <NavItem>Design & Technology</NavItem>
         </Navigation>
@@ -118,8 +117,8 @@ const IndexPage = ({
           projectLength={edges.filter(edge => !!edge.node.frontmatter.date).length}
         >
           <Bio ref={measuredBio} id="bio" projectIsOpen={projectIsOpen} bioHeight={bioHeight}>
-            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is the design & technology practice of Oliver Thomas Klein. 
-            {/* <br/>&#8195;&#8195;*/} Through an understanding of visual sensibility, modern technology and functional design, Oliver creates digital products, identities and experiences that reflect the core values of those he collaborates with.
+            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & technology studio. 
+            {/* <br/>&#8195;&#8195;*/} We create digital products and brand systems that reflect the core values of those we collaborate with.
           </Bio>
           <WorkContainer id="work" bioHeight={bioHeight} projectIsOpen={projectIsOpen}>
             {edges
