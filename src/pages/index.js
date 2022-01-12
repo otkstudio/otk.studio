@@ -90,7 +90,7 @@ const IndexPage = ({
         <Navigation rendered={rendered} projectIsOpen={projectIsOpen}>
           <NavItem>Est. 2019</NavItem>
           <NavItem>
-            <Link href="mailto:oliver@otk.studio">Contact</Link>,
+            <Link href="mailto:oliver@otk.studio">Contact</Link>
           </NavItem>
           <NavItem>Design & Technology</NavItem>
         </Navigation>
