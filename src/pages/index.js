@@ -164,7 +164,7 @@ const IndexPage = ({
             <br />
             <br />
             We deliver on product strategy, user experience and interface
-            design, full-stack development, and brand identity systems. And with
+            design, full-stack development, and brand identity systems. With
             our unique process we'll help you launch brilliant products that
             move your customers.
           </Bio>
