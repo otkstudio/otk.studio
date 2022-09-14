@@ -4,10 +4,10 @@ title: "Mortal"
 deliverable: "Mobile App"
 new: false
 partner: "Self Initiated"
-practice: [ "Art Direction", "Strategy", "Design", "Development" ]
+practice: [ "Strategy", "Design", "Development", "Art Direction" ]
 ongoing: false
 images: [
-  { url: 'mortal.jpg', cover: false, height: '80%' },
+  { url: 'mortal.png', color: "#EEE", cover: false, width: "100%" },
 ]
 date: "2020-12-18"
 url: "https://apps.apple.com/us/app/mortal-life-and-death/id1539779808"

@@ -4,12 +4,12 @@ title: "WattsApp"
 deliverable: "Mobile App"
 new: false
 partner: "Reggie Watts"
-practice: [ "Art Direction", "Strategy", "Design", "Development" ]
-ongoing: true
+practice: [ "Strategy", "Design", "Development", "Art Direction" ]
+ongoing: false
 images: [
-  { url: 'wattsapp-1.jpg', cover: true },
+  { url: 'wattsapp.png', color: "#EEE", cover: false, width: "100%" },
 ]
-date: "2021-11-03"
+date: "2020-12-20"
 url: "https://apps.apple.com/us/app/wattsapp-by-reggie-watts/id1489429381?ls=1"
 ---
 

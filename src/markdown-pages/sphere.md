@@ -4,9 +4,10 @@ title: "Sphere"
 deliverable: "Mobile App"
 new: false
 partner: "Sphere"
-practice: [ "Art Direction", "Strategy", "Design", "Development" ]
+practice: [ "Strategy", "Design", "Development", "Art Direction" ]
 ongoing: false
 images: [
+  { url: 'get-coaching-1.jpg', cover: false, height: '70%' },
   { url: 'get-coaching-2.jpg', cover: false, height: '70%' },
 ]
 date: "2020-02-25"

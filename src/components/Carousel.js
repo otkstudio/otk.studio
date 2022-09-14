@@ -49,7 +49,7 @@ function Imagery({ images, setCurrentSlide, currentSlide, photoCount }) {
 // const ImageSlide = ({ url, cover, index }) =>  <Image cover={cover} url={url} ></Image>;
 
 const Container = styled.div`
-  height: 100%;
+  height: 100vh
   width: 100%;
   position: relative;
 `;
