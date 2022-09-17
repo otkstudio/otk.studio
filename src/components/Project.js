@@ -322,7 +322,7 @@ const PracticeIndicator = styled.div`
     if (practice === "Design") {
       color = "#ffaf00"
     }
-    if (practice === "Development") {
+    if (practice === "Engineering") {
       color = "#ff0000"
     }
     if (practice === "Art Direction") {

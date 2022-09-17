@@ -116,7 +116,7 @@ const IndexPage = ({
               Instagram
             </Link>
           </NavItem>
-          <NavItem>Design & Technology</NavItem>
+          <NavItem>Designing Programmes</NavItem>
         </Navigation>
 
         <Title
@@ -160,13 +160,13 @@ const IndexPage = ({
             bioHeight={bioHeight}
           >
             &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & engineering
-            practice, focused on consumer software products and brands.
+            office dedicated to creating delightful software products and
+            brands.
             <br />
             <br />
-            We deliver on product strategy, user experience and interface
-            design, full-stack development, and brand identity systems. With
-            our unique process we'll help you launch brilliant products that
-            move your customers.
+            We deliver product strategy, user experience and interface design,
+            full-stack development, and brand identity systems, to create
+            exceptional experiences for the customers we serve.
           </Bio>
           <WorkContainer
             id="work"
@@ -201,8 +201,8 @@ const IndexPage = ({
               <LegendName>Design</LegendName>
             </LegendContainer>
             <LegendContainer>
-              <LegendColor name="Development" />
-              <LegendName>Development</LegendName>
+              <LegendColor name="Engineering" />
+              <LegendName>Engineering</LegendName>
             </LegendContainer>
             <LegendContainer>
               <LegendColor name="Art Direction" />
@@ -264,7 +264,7 @@ const Navigation = styled.div`
   overflow: hidden;
   margin: 0 5px;
   max-width: 100%;
-  padding-top: 5px;
+  padding-top: ${(props) => (props.projectIsOpen !== null ? 10 : 5)}px;
   max-height: ${(props) => (props.projectIsOpen !== null ? 0 : 38)}px;
   opacity: ${(props) =>
     props.projectIsOpen !== null || !props.rendered ? 0 : 1};
@@ -273,6 +273,8 @@ const Navigation = styled.div`
     h2:first-child {
       display: none;
     }
+
+    padding-top: 3px;
 
     grid-template-columns: 1fr;
     height: 36px;
@@ -308,6 +310,7 @@ const NavItem = styled.h2`
   display: inline;
   margin: inherit;
   padding: inherit;
+  letter-spacing: -0.01em;
 `
 
 const Link = styled.a`
@@ -326,10 +329,7 @@ const Title = styled.svg`
   margin: 0 10px;
   z-index: 4;
   background: transparent;
-  width: calc(
-    ${(props) => (props.projectIsOpen !== null ? 50 : 100)}vw -
-      ${(props) => (props.projectIsOpen !== null ? 15 : 20)}px
-  );
+  width: calc(${(props) => (props.projectIsOpen !== null ? 50 : 100)}vw - 20px);
   padding: ${(props) => (props.projectIsOpen !== null ? 0 : 10)}px 0 10px;
   transition: width 0.7s cubic-bezier(0.24, 1, 0.32, 1),
     padding 0.7s cubic-bezier(0.24, 1, 0.32, 1),
@@ -496,7 +496,7 @@ const LegendColor = styled.div`
     if (name === "Design") {
       color = "#ffaf00"
     }
-    if (name === "Development") {
+    if (name === "Engineering") {
       color = "#ff0000"
     }
     if (name === "Art Direction") {

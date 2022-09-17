@@ -4,7 +4,7 @@ title: "Programme"
 deliverable: "Website"
 new: true
 partner: "Self Initiated"
-practice: [ "Strategy", "Design", "Development", "Art Direction" ]
+practice: [ "Strategy", "Design", "Engineering", "Art Direction" ]
 ongoing: true
 images: [
   { url: 'programme_homepage.png', color: "#eee", cover: false, width: "90%" },

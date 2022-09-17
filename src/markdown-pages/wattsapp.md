@@ -4,7 +4,7 @@ title: "WattsApp"
 deliverable: "Mobile App"
 new: false
 partner: "Reggie Watts"
-practice: [ "Strategy", "Design", "Development", "Art Direction" ]
+practice: [ "Strategy", "Design", "Engineering" ]
 ongoing: false
 images: [
   { url: 'wattsapp.png', color: "#EEE", cover: false, width: "100%" },

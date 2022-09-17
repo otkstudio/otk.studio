@@ -4,7 +4,7 @@ title: "Compendium Studio"
 deliverable: "Website"
 new: false
 partner: "Ryan Willms"
-practice: [ "Design", "Development" ]
+practice: [ "Design", "Engineering" ]
 images: [ 
   { url: 'compendium-1.jpg', cover: false, width: '85%' },
 ]

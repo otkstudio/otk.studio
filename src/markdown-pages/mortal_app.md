@@ -4,7 +4,7 @@ title: "Mortal"
 deliverable: "Mobile App"
 new: false
 partner: "Self Initiated"
-practice: [ "Strategy", "Design", "Development", "Art Direction" ]
+practice: [ "Strategy", "Design", "Engineering" ]
 ongoing: false
 images: [
   { url: 'mortal.png', color: "#EEE", cover: false, width: "100%" },

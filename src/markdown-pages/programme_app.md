@@ -4,7 +4,7 @@ title: "Programme"
 deliverable: "Mobile App"
 new: true
 partner: "Self Initiated"
-practice: [ "Strategy", "Design", "Development", "Art Direction" ]
+practice: [ "Strategy", "Design", "Engineering" ]
 ongoing: true
 images: [
   { url: 'programme_home.png', color: "#EEE", cover: false, width: "100%" },
