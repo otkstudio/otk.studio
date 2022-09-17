@@ -164,7 +164,7 @@ const IndexPage = ({
             brands.
             <br />
             <br />
-            We deliver product strategy, user experience and interface design,
+            We deliver on product strategy, user experience and interface design,
             full-stack development, and brand identity systems, to create
             exceptional experiences for the customers we serve.
           </Bio>
