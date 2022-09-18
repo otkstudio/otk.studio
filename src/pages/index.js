@@ -164,7 +164,7 @@ const IndexPage = ({
             brands.
             <br />
             <br />
-            We deliver on product strategy, user experience and interface design,
+            We deliver product strategy, user experience and interface design,
             full-stack development, and brand identity systems, to create
             exceptional experiences for the customers we serve.
           </Bio>
@@ -370,7 +370,7 @@ const Bio = styled.div`
   line-height: 32px;
   margin: 0;
   padding: 0 10px;
-  position: fixed;
+  position: absolute;
   width: calc(50vw - 20px);
 
   @media (max-width: 800px) {
@@ -447,7 +447,7 @@ const Images = styled.div`
 
 const Legend = styled.div`
   position: ${({ projectIsOpen }) =>
-    projectIsOpen === null ? "fixed" : "static"};
+    projectIsOpen === null ? "absolute" : "static"};
   position: fixed;
   margin: 0 10px;
   padding: 0 10px 0 0;
