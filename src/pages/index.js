@@ -160,7 +160,7 @@ const IndexPage = ({
             bioHeight={bioHeight}
           >
             &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & engineering
-            office dedicated to creating delightful software products and
+            office, dedicated to creating refined software products and
             brands.
             <br />
             <br />
