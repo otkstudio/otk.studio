@@ -105,10 +105,6 @@ const IndexPage = ({
           <NavItem>Est. 2019</NavItem>
           <NavItem>
             <Link href="mailto:oliver@otk.studio">Contact</Link>,
-            <Link href="https://twitter.com/otkstdio" target="_blank">
-              Twitter
-            </Link>
-            ,
             <Link
               href="https://instagram.com/oliverthomasklein"
               target="_blank"
