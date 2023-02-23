@@ -106,7 +106,7 @@ const IndexPage = ({
           <NavItem>
             <Link href="mailto:oliver@otk.studio">Contact</Link>,
             <Link
-              href="https://instagram.com/oliverthomasklein"
+              href="https://instagram.com/otk.studio"
               target="_blank"
             >
               Instagram
