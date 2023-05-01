@@ -15,4 +15,5 @@ jobs:
       - uses: actions/checkout@v3
       - uses: enriikke/gatsby-gh-pages-action@v2
         with: 
+          deploy-branch: 'main'
           access-token: ${{ secrets.ACCESS_TOKEN }}
