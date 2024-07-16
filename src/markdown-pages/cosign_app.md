@@ -5,7 +5,7 @@ deliverable: "Product"
 new: false
 partner: "Self Initiated"
 practice: ["Strategy", "Design"]
-ongoing: true
+ongoing: false
 images:
   [
     {
@@ -17,5 +17,3 @@ images:
   ]
 date: "2023-03-01"
 ---
-
-### Cosign is a mobile app that aims to be the easiest way to send and secure bitcoin.

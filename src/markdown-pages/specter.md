@@ -5,7 +5,7 @@ deliverable: "Identity & Product"
 new: false
 partner: "Swan Bitcoin"
 practice: ["Strategy", "Art Direction", "Design", "Engineering"]
-ongoing: true
+ongoing: false
 images:
   [
     {
@@ -19,6 +19,18 @@ images:
       color: "#000",
       cover: false,
       width: "100",
+    },
+    {
+      url: "specter_identity.jpg",
+      cover: false,
+      width: "100%",
+      color: "#DEDEDE",
+    },
+    {
+      url: "specter_onboarding.jpg",
+      cover: false,
+      width: "100%",
+      color: "#DEDEDE",
     },
   ]
 date: "2023-04-01"

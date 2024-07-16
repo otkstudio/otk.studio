@@ -3,7 +3,7 @@ path: "/work/programme"
 title: "Programme"
 deliverable: "Product"
 new: false
-partner: "Self Initiated"
+partner: "Programme"
 practice: [ "Strategy", "Design", "Engineering" ]
 ongoing: true
 images: [

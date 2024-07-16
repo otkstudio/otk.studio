@@ -32,7 +32,8 @@ const IndexPage = ({
 
   // Prepare Images and their MetaData
   useEffect(() => {
-    const homeImages = [{ url: "la-skate.jpg", cover: true, color: "#333" }]
+    // const homeImages = [{ url: "la-skate.jpg", cover: true, color: "#333" }]
+    const homeImages = [{ url: "studio-2.jpg", cover: true, color: "#333" }]
     const allImages = [...homeImages]
     const breakpoints = [homeImages.length]
     let numberOfPhotos = 0
@@ -103,10 +104,7 @@ const IndexPage = ({
           <NavItem>Est. 2019</NavItem>
           <NavItem>
             <Link href="mailto:office@otk.studio">Contact</Link>,
-            <Link
-              href="https://instagram.com/otk.studio"
-              target="_blank"
-            >
+            <Link href="https://instagram.com/otk.studio" target="_blank">
               Instagram
             </Link>
           </NavItem>
@@ -154,8 +152,7 @@ const IndexPage = ({
             bioHeight={bioHeight}
           >
             &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & engineering
-            office, developing software products and
-            brands.
+            office, developing software products and brands.
             <br />
             <br />
             We deliver product strategy, user experience and interface design,
