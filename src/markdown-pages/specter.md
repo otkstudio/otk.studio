@@ -21,7 +21,7 @@ images:
       width: "100",
     },
   ]
-date: "2022-12-31"
+date: "2023-04-01"
 ---
 
 ### Specter empowers individuals, communities and businesses to control their own bitcoin keys, improving their security and enabling them to manage their bitcoin with greater control.

@@ -1,7 +1,7 @@
 ---
 path: "/work/sphere"
 title: "Sphere"
-deliverable: "Mobile App"
+deliverable: "Product"
 new: false
 partner: "Sphere"
 practice: [ "Strategy", "Design", "Engineering" ]

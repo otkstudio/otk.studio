@@ -15,7 +15,7 @@ images:
       width: "102",
     },
   ]
-date: "2023-04-01"
+date: "2023-02-01"
 ---
 
 ### Walden is vacation rentals company that connects people to spaces that encourage more thoughtful living. Inspired by the book, Walden by Henry David Thoreau, where the author shares the story of questioning his environment to return to more intentional living—Walden embeds this history into its very own wordmark by questioning its own typographic forms.
