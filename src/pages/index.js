@@ -145,19 +145,34 @@ const IndexPage = ({
             edges.filter((edge) => !!edge.node.frontmatter.date).length
           }
         >
+          {/* <Bio */}
+          {/*   ref={measuredBio} */}
+          {/*   id="bio" */}
+          {/*   projectIsOpen={projectIsOpen} */}
+          {/*   bioHeight={bioHeight} */}
+          {/* > */}
+          {/*   &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & engineering */}
+          {/*   office, developing software products and brands. */}
+          {/*   <br /> */}
+          {/*   <br /> */}
+          {/*   We deliver product strategy, user experience and interface design, */}
+          {/*   full-stack development, and brand identity systems, to create */}
+          {/*   exceptional experiences for the customers we serve. */}
+          {/* </Bio> */}
           <Bio
             ref={measuredBio}
             id="bio"
             projectIsOpen={projectIsOpen}
             bioHeight={bioHeight}
           >
-            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design & engineering
-            office, developing software products and brands.
+            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a brand and product
+            development office, led by Oliver Thomas Klein.
             <br />
             <br />
-            We deliver product strategy, user experience and interface design,
-            full-stack development, and brand identity systems, to create
-            exceptional experiences for the customers we serve.
+            The studio engages in ongoing design & engineering partnerships with
+            founders, creative leaders, and early stage companies. We
+            have a proven history of delivering uncompromising brand identities,
+            products and websites.
           </Bio>
           <WorkContainer
             id="work"
