@@ -165,14 +165,13 @@ const IndexPage = ({
             projectIsOpen={projectIsOpen}
             bioHeight={bioHeight}
           >
-            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a brand and product
-            development office, led by Oliver Thomas Klein.
+            &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design and engineering
+            office, led by Oliver Thomas Klein.
             <br />
             <br />
-            The studio engages in ongoing design & engineering partnerships with
-            founders, creative leaders, and early stage companies. We
-            have a proven history of delivering uncompromising brand identities,
-            products and websites.
+            The studio engages in ongoing partnerships with founders, creative
+            leaders, and early stage companies, with a proven history of
+            delivering uncompromising brand identities, products and websites.
           </Bio>
           <WorkContainer
             id="work"
