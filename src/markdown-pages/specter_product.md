@@ -1,25 +1,13 @@
 ---
 path: "/work/specter"
 title: "Specter"
-deliverable: "Identity & Product"
+deliverable: "Product"
 new: false
 partner: "Swan Bitcoin"
-practice: ["Strategy", "Art Direction", "Design", "Engineering"]
+practice: ["Strategy", "Design", "Engineering"]
 ongoing: false
 images:
   [
-    {
-      url: "https://player.vimeo.com/video/890470205?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      color: "#000",
-      cover: true,
-      width: "100",
-    },
-    {
-      url: "https://player.vimeo.com/video/938292244?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      color: "#000",
-      cover: false,
-      width: "100",
-    },
     {
       url: "specter_identity.jpg",
       cover: false,
