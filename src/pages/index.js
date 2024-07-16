@@ -47,8 +47,6 @@ const IndexPage = ({
         allImages.push(...projectImages)
       })
 
-    console.log(allImages)
-
     setPhotoCount(numberOfPhotos)
     setProjectBreakPoints(breakpoints)
     setImages(allImages)

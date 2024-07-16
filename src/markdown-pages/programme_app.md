@@ -1,8 +1,8 @@
 ---
 path: "/work/programme"
 title: "Programme"
-deliverable: "Mobile App"
-new: true
+deliverable: "Product"
+new: false
 partner: "Self Initiated"
 practice: [ "Strategy", "Design", "Engineering" ]
 ongoing: true

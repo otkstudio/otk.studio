@@ -7,7 +7,18 @@ partner: "Self Initiated"
 practice: [ "Design", "Art Direction" ]
 ongoing: false
 images: [
-  { url: 'logo_black.png', cover: false, width: "90%", color: "white" }
+    {
+      url: "https://player.vimeo.com/video/890468326?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      color: "#000",
+      cover: true,
+      width: "100",
+    },
+    {
+      url: "https://player.vimeo.com/video/890471016?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      color: "#000",
+      cover: false,
+      width: "100",
+    },
 ]
 date: "2021-09-24"
 url: "https://www.notion.so/otk/A-Brand-That-Moves-4857ced997be43e8b91594a74091ecfc"

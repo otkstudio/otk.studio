@@ -1,7 +1,7 @@
 ---
 path: "/work/mortal"
 title: "Mortal"
-deliverable: "Mobile App"
+deliverable: "Product"
 new: false
 partner: "Self Initiated"
 practice: [ "Strategy", "Design", "Engineering" ]
