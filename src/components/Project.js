@@ -281,7 +281,10 @@ const MetaData = styled.div`
 
 const InfoContainer = styled.div`
   display: grid;
-  grid-template-columns: 6fr 6fr 2fr;
+  grid-template-columns: 6fr 8fr 0fr;
+  @media (max-width: 500px) {
+    grid-template-columns: 4fr 5fr 0fr;
+  }
   border-top: 1px dotted black;
   padding: 3px 0 1px;
   grid-column-gap: 5px;
