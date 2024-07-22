@@ -108,7 +108,7 @@ const IndexPage = ({
               Instagram
             </Link>
           </NavItem>
-          <NavItem>Designing Programmes</NavItem>
+          <NavItem>Paris—Fr</NavItem>
         </Navigation>
 
         <Title
@@ -166,12 +166,10 @@ const IndexPage = ({
             bioHeight={bioHeight}
           >
             &#8195;&#8195;<SeoH1>OTK Studio</SeoH1> is a design and engineering
-            office, led by Oliver Thomas Klein.
-            <br />
-            <br />
-            The studio engages in ongoing partnerships with founders, creative
-            leaders, and early stage companies, with a proven history of
-            delivering uncompromising brand identities, products and websites.
+            office, led by Oliver Thomas Klein. The studio engages in ongoing
+            partnerships with founders, creative leaders, and early stage
+            companies. We have a proven history of delivering uncompromising
+            brand identities, products and websites.
           </Bio>
           <WorkContainer
             id="work"
@@ -196,24 +194,24 @@ const IndexPage = ({
                 />
               ))}
           </WorkContainer>
-          <Legend projectIsOpen={projectIsOpen}>
-            <LegendContainer>
-              <LegendColor name="Strategy" />
-              <LegendName>Strategy</LegendName>
-            </LegendContainer>
-            <LegendContainer>
-              <LegendColor name="Design" />
-              <LegendName>Design</LegendName>
-            </LegendContainer>
-            <LegendContainer>
-              <LegendColor name="Engineering" />
-              <LegendName>Engineering</LegendName>
-            </LegendContainer>
-            <LegendContainer>
-              <LegendColor name="Art Direction" />
-              <LegendName>Art Direction</LegendName>
-            </LegendContainer>
-          </Legend>
+          {/* <Legend projectIsOpen={projectIsOpen}> */}
+          {/*   <LegendContainer> */}
+          {/*     <LegendColor name="Strategy" /> */}
+          {/*     <LegendName>Strategy</LegendName> */}
+          {/*   </LegendContainer> */}
+          {/*   <LegendContainer> */}
+          {/*     <LegendColor name="Design" /> */}
+          {/*     <LegendName>Design</LegendName> */}
+          {/*   </LegendContainer> */}
+          {/*   <LegendContainer> */}
+          {/*     <LegendColor name="Engineering" /> */}
+          {/*     <LegendName>Engineering</LegendName> */}
+          {/*   </LegendContainer> */}
+          {/*   <LegendContainer> */}
+          {/*     <LegendColor name="Art Direction" /> */}
+          {/*     <LegendName>Art Direction</LegendName> */}
+          {/*   </LegendContainer> */}
+          {/* </Legend> */}
         </Content>
       </Grid>
     </Layout>
@@ -255,7 +253,7 @@ const Grid = styled.div`
 `
 
 const Navigation = styled.div`
-  transition: 0.7s cubic-bezier(0.24, 1, 0.32, 1);
+  transition: 1.6s cubic-bezier(0.24, 1, 0.32, 1);
 
   grid-area: n;
   display: grid;
@@ -336,10 +334,10 @@ const Title = styled.svg`
   background: transparent;
   width: calc(${(props) => (props.projectIsOpen !== null ? 50 : 100)}vw - 20px);
   padding: ${(props) => (props.projectIsOpen !== null ? 0 : 10)}px 0 10px;
-  transition: width 0.7s cubic-bezier(0.24, 1, 0.32, 1),
-    padding 0.7s cubic-bezier(0.24, 1, 0.32, 1),
-    margin 0.7s cubic-bezier(0.24, 1, 0.32, 1),
-    transform 1.6s cubic-bezier(0.24, 1, 0.32, 1);
+  transition: width 1.0s cubic-bezier(0.24, 1, 0.32, 1),
+    padding 1.0s cubic-bezier(0.24, 1, 0.32, 1),
+    margin 1.0s cubic-bezier(0.24, 1, 0.32, 1),
+    transform 1.0s cubic-bezier(0.24, 1, 0.32, 1);
   @media (max-width: 800px) {
     transform: translateY(${({ rendered }) => (rendered ? 0 : -24)}px);
     padding: 8px 10px 4px;
@@ -351,7 +349,7 @@ const Title = styled.svg`
 `
 
 const Content = styled.div`
-  transition: opacity 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.3s;
+  transition: opacity 1.0s cubic-bezier(0.8, 1, 0.32, 1) 0.3s;
   opacity: ${({ rendered }) => (rendered ? 1 : 0)};
   grid-area: c;
   z-index: 4;
@@ -401,7 +399,7 @@ const WorkContainer = styled.div`
   margin: 0 10px;
   padding-top: ${({ projectIsOpen, bioHeight }) =>
     projectIsOpen !== null ? 0 : bioHeight}px;
-  transition: 0.7s cubic-bezier(0.24, 1, 0.32, 1);
+  transition: 1.0s cubic-bezier(0.24, 1, 0.32, 1);
   border-bottom: 1px solid black;
   margin-bottom: 32px;
   @media (max-width: 800px) {
@@ -416,7 +414,7 @@ const WorkContainer = styled.div`
 `
 
 const Images = styled.div`
-  transition: 1.2s cubic-bezier(0.24, 1, 0.32, 1) 0.3s;
+  transition: 1.0s cubic-bezier(0.24, 1, 0.32, 1) 0.3s;
   opacity: ${({ rendered }) => (rendered ? 1 : 0)};
   overflow: scroll;
   grid-column-start: 3 !important;
@@ -466,7 +464,7 @@ const Legend = styled.div`
   transform: translateY(
     ${({ projectIsOpen }) => (projectIsOpen === null ? 0 : 32)}px
   );
-  transition: 0.7s cubic-bezier(0.24, 1, 0.32, 1);
+  transition: 1.0s cubic-bezier(0.24, 1, 0.32, 1);
 
   @media (max-width: 800px) {
     width: 100%;

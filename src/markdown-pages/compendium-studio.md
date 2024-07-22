@@ -1,6 +1,6 @@
 ---
 path: "/work/compendium-studio"
-title: "Compendium Studio"
+title: "Compendium"
 deliverable: "Website"
 new: false
 partner: "Ryan Willms"

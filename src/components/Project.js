@@ -51,22 +51,24 @@ const PostLink = ({
       >
         <GridItem>
           <InlineContainer>
-            {project.frontmatter.deliverable}{" "}
+            {project.frontmatter.title}{" "}
             {project.frontmatter.new && <NewIndicator>New</NewIndicator>}
           </InlineContainer>
-          <PracticeContainer>
-            {project.frontmatter.practice.map((practice) => (
-              <PracticeIndicator
-                key={practice}
-                practice={practice}
-                projectIsOpen={projectIsOpen}
-              />
-            ))}
-          </PracticeContainer>
+          {/* <PracticeContainer> */}
+          {/*   {project.frontmatter.practice.map((practice) => ( */}
+          {/*     <PracticeIndicator */}
+          {/*       key={practice} */}
+          {/*       practice={practice} */}
+          {/*       projectIsOpen={projectIsOpen} */}
+          {/*     /> */}
+          {/*   ))} */}
+          {/* </PracticeContainer> */}
         </GridItem>
 
         <GridItem>
-          <Deliverable>{project.frontmatter.title}</Deliverable>
+          <Deliverable>{project.frontmatter.deliverable}</Deliverable>
+        </GridItem>
+        <GridItem justify="flex-end">
           <InlineContainer>
             <Year>{project.frontmatter.date.slice(-4)}</Year>
             <Arrow
@@ -171,17 +173,17 @@ const Header = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  grid-template-columns: 7fr 8fr;
+  grid-template-columns: 6fr 6fr 2fr;
   grid-column-gap: 5px;
   align-items: center;
   cursor: pointer;
   &:hover {
     > div {
-      color: blue;
+      color: #0027af;
     }
   }
   @media (max-width: 500px) {
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 4fr 3fr 2fr;
   }
 `
 
@@ -196,13 +198,13 @@ const GridItem = styled.div`
   padding: 4px 0 6px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: ${({ justify }) => justify || "space-between"};
   @media (max-width: 500px) {
     &:nth-child(1) {
       justify-content: space-between;
     }
     &:nth-child(2) {
-      justify-content: flex-end;
+      // justify-content: flex-end;
     }
   }
 `
@@ -215,13 +217,13 @@ const InlineContainer = styled.div`
 
 const Deliverable = styled.span`
   @media (max-width: 500px) {
-    text-align: right;
+    text-align: left;
   }
 `
 
 const Year = styled.span`
   @media (max-width: 500px) {
-    display: none;
+    // display: none;
   }
 `
 
@@ -279,7 +281,7 @@ const MetaData = styled.div`
 
 const InfoContainer = styled.div`
   display: grid;
-  grid-template-columns: 7fr 8fr;
+  grid-template-columns: 6fr 6fr 2fr;
   border-top: 1px dotted black;
   padding: 3px 0 1px;
   grid-column-gap: 5px;
@@ -292,7 +294,7 @@ const InfoContainer = styled.div`
     align-items: center;
   }
   a {
-    color: blue;
+    color: #0027af;
   }
   a:visited {
     color: #ff0000;
